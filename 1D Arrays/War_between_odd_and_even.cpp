@@ -1,3 +1,5 @@
+//You will be given an array and you need to find odd numbers and add them, find even numbers and add them. Then compare the result, if the sum of even numbers found to be greater then print 'Even' to the stdout, if sum of odd number is greater than print 'odd' to the stdout. If sum of both found to be equal, then print 'Tied' to the stdout.
+
 /*Enter your code here. Read input from STDIN. Print your output to STDOUT*/
 #include <iostream>
 using namespace std;

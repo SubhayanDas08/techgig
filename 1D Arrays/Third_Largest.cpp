@@ -1,3 +1,5 @@
+//You will be given an array and you need to find the third largest and print it to the stdout.
+
 /*Enter your code here. Read input from STDIN. Print your output to STDOUT*/
 #include <iostream>
 using namespace std;

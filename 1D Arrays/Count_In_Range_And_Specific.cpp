@@ -1,13 +1,13 @@
 //You will be given an array and a range and you need to count how many array elements lies in that range and not divisible by 3 and 5.
 
 /*Enter your code here. Read input from STDIN. Print your output to STDOUT*/
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main()
 {
     int n;
     cin >> n;
-    int a[n];
+    int *a = new int[n];
     for (int i = 0; i < n; i++)
         cin >> a[i];
     int lower_limit, higher_limit;
@@ -19,5 +19,7 @@ int main()
             count++;
     }
     cout << count << endl;
+    delete[] a;
+    
     return 0;
 }

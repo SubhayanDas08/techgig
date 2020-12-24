@@ -3,44 +3,19 @@
 using namespace std;
 int main()
 {
-	int n,days;
+	int n;
 
-    cin>>days;
-	if (days>0)
-	{
-        int *temp = new int[days];
+    cin>>n;
+    if (n>0)
+    {
+        int *arr = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            cin>>arr[i];
+        }
 
-        int ctr;
-
-        for (int i = 0; i < days; temp[i++]=0);
-
-		for (int i = 0; i < days; i++)
-		{
-            cin>>temp[i];
-		}   
-
-        n=days;
-
-        while(n>0)
-        {        
-            for (int i = 0; i < days; i++)
-            {
-                if (temp[i]==n)
-                {
-                    cout<<temp[i];
-                    n--;
-                }
-                else if(temp[i]<n)
-                {
-                    cout<<"\n"<<0<<endl;
-                }
-                
-                
-            }
-        }   
-        
-		delete[] temp;
-	}
-
+        delete[] arr;
+    }
+    
     return 0;
 }

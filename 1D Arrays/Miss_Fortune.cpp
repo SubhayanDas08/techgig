@@ -34,7 +34,7 @@ int main()
             {
                 if (temp[i]==n)
                 {
-                    cout<<temp[i];
+                    cout<<temp[i]<<" ";
                     n--;
                 }
                 else if(temp[i]<n)

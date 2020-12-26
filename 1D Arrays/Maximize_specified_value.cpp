@@ -5,40 +5,37 @@
 using namespace std;
 int main()
 {
-	int n;
+    int n;
 
-    cin>>n;
-    if(n>2)
+    cin >> n;
+    if (n > 2)
     {
         int *arr = new int[n];
         for (int i = 0; i < n; i++)
         {
-            cin>>arr[i];
+            cin >> arr[i];
         }
-        
-        int I=0, J=0;
+
+        int I = 0, J = 0;
 
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < n; j++)
             {
-                if (i!=j)
+                if (i != j)
                 {
-                    if((arr[I]-I)-(arr[J]-J)<(arr[i]-i)-(arr[j]-j))
-                        {
-                            I=i;
-                            J=j;
-                        }
+                    if ((arr[I] - I) - (arr[J] - J) < (arr[i] - i) - (arr[j] - j))
+                    {
+                        I = i;
+                        J = j;
+                    }
                 }
-                
             }
-            
         }
 
-        cout<<(arr[I]-I)-(arr[J]-J);
-        
+        cout << (arr[I] - I) - (arr[J] - J);
+
         delete[] arr;
     }
     return 0;
 }
-

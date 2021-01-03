@@ -10,11 +10,11 @@ int main()
     if (count > 0)
     {
         int *arr = new int[count];
-        for (int i = 0; i < count; i++)
-        {
-            cin >> arr[i];
-        }
-
+        // for (int i = 0; i < count; i++)
+        // {
+        //     cin >> arr[i];
+        // }
+        cout<<"Hello World!";
         delete[] arr;
     }
 
